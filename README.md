@@ -1,15 +1,5 @@
 # EV_Builder_Kit
 
-Erbyn Bonilla
-
-Henry Chong
-
-Stephanie Cuterez
-
-Linglong Le
-
-Michelle Imogu
-
 
 Due to the significant portion of greenhouse gases being emitted by the transportation sector, new methods of
 reducing these emissions are being pushed forward. One of the main methods to reduce these emissions is through the
