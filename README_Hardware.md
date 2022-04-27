@@ -29,15 +29,60 @@ This section will deal with the circuitry and hardware for the vehicles used
 
 ### Car Circuit Schematic
 ![image](https://user-images.githubusercontent.com/74795368/165640042-de89219c-cf17-487c-97ad-1129df1fb366.png)
+[Link to PDF](/Circuit_Schematics/Car_Circuit.pdf)
 ![image](https://user-images.githubusercontent.com/74795368/165640060-bbe30a24-28e5-4a18-b645-b129249c1591.png)
-  Shown here is a circuit diagram and an associated abstraction. Essentially the circuit can be split up into two different components, the battery circuit and the operational circuit. The operational circuit operates on 5 volts and consists of: the microcontroller, voltage regulator, motor driver, motors, and transciever. This circuit is what drives radio communication and driving of the car. The battery circuit on the other hand consists of the LiPo Fuel Gauge and the LiPo Charging Chip, and serves to monitor and recharge the battery. The output of the battery circuit is fed to the voltage regulator to actually power the rest of the operational circuit. Thus by turning off the voltage regulator using a switch, we are able to maintain the ability to charge the battery while cutting power off from the car.
+[Link to PDF](/Circuit_Schematics/Car_Circuit_Abstraction.pdf)
+ 
+Shown here is a circuit diagram and an associated abstraction. Essentially the circuit can be split up into two different components, the battery circuit and the operational circuit. The operational circuit operates on 5 volts and consists of: the microcontroller, voltage regulator, motor driver, motors, and transciever. This circuit is what drives radio communication and driving of the car. The battery circuit on the other hand consists of the LiPo Fuel Gauge and the LiPo Charging Chip, and serves to monitor and recharge the battery. The output of the battery circuit is fed to the voltage regulator to actually power the rest of the operational circuit. Thus by turning off the voltage regulator using a switch, we are able to maintain the ability to charge the battery while cutting power off from the car.
 
 ### Car Body Schematic
-  Schematic+Explaination
+![image](https://user-images.githubusercontent.com/74795368/165643972-cb1862c7-8c90-45af-9fd8-f76641012f2d.png)
+[Link to PDF](/Hardware_Schematics/Car_Schematic.pdf)
+
+Shown here is the drawing used to create the body of the cars. This is the drawing for the LDV variant of the cars. The body is made up of two main components: the 1/8" thick MDF board and the 2" by 1" wood plank. The MDF board is drilled so that all the circuit components can be attached using screws, while the plank is super glued to the front of the MDF board, for mounting the wheels. Once all the circuitry has been attached and screwed in, steel weights are then added to the back of the vehicle, to improve the vehicle's handling by shifting the center of gravity towards the motored wheels.
+
 ### Bill of Materials
-  Table with Vendor names and Links, and amounts. Links to datasheet sections/asset
-### Datasheets
-  List significant Datasheets
+#### Light Duty Vehicle(LDV) variant Car
+
+This bill of materials covers the material needed to create one LDV car, and does not include components such as nails, screws and wires.
+
+| Item | Amount | Vendor | Datasheet Link |
+| --------------- | :---------------: | :---------------: |:---------------: |
+| Microcontroller | 1 | Amazon | [Link](/Data_Sheets/Nano_Pinouts.pdf)|
+| Transciever | 1 | Amazon | [Link](/Data_Sheets/nRF24L01_Datasheet.pdf)|
+| Battery Monitoring Chip| 1 | Adafruit  | [Link](/Data_Sheets/Battery_Monitor_Datasheet.pdf)|
+| Battery Charging Chip | 1 | Adafruit | [Link](/Data_Sheets/Charger_Datasheet.pdf)|
+| Battery | 1 | Adafruit |  [Link](/Data_Sheets/Battery_Datasheet.pdf)|
+| Voltage Regulator| 1 | Pololu |  [Link](/Data_Sheets/Pololu_Regulator_Sheets/Chip_Datasheet.pdf)| 
+| Motor Controller | 1 | Adafruit | [Link](/Data_Sheets/Motor_Driver_Datasheet.pdf)| 
+| Plastic Motor | 2 | Pololu | [Link](/Data_Sheets/Plastic_Motor_Specifications.pdf)|  
+| Motor Wheels | 2| Pololu | [Link](/Data_Sheets/Dimensions/Pololu_Wheel_Dimensions.pdf)|
+| Plastic Motor Brackets | 2 | Pololu | [Link](/Data_Sheets/Dimensions/Plastic_Motor_Mounts_Dimensions.pdf) |
+| Front Wheels | 2 | Amazon | [Link](https://www.amazon.com/gp/product/B073W18BP3) |
+| Steel Weights | 10 | Amazon | [Link](https://www.amazon.com/gp/product/B06XDHXRT7)|
+| 1/8" MDF Board| 1 | Home Depot | N/A |
+| 2" by 1" Plank | 1 | Home Depot | N/A |
+
+#### Heavy Duty Vehicle(HDV) variant Car
+
+This bill of materials covers the material needed to create one HDV car, and does not include components such as nails, screws and wires.
+
+| Item | Amount | Vendor | Datasheet Link |
+| --------------- | :---------------: | :---------------: |:---------------: |
+| Microcontroller | 1 | Amazon | [Link](/Data_Sheets/Nano_Pinouts.pdf)|
+| Transciever | 1 | Amazon | [Link](/Data_Sheets/nRF24L01_Datasheet.pdf)|
+| Battery Monitoring Chip| 1 | Adafruit  | [Link](/Data_Sheets/Battery_Monitor_Datasheet.pdf)|
+| Battery Charging Chip | 1 | Adafruit | [Link](/Data_Sheets/Charger_Datasheet.pdf)|
+| Battery | 1 | Adafruit |  [Link](/Data_Sheets/Battery_Datasheet.pdf)|
+| Voltage Regulator| 1 | Pololu |  [Link](/Data_Sheets/Pololu_Regulator_Sheets/Chip_Datasheet.pdf)| 
+| Motor Controller | 1 | Adafruit | [Link](/Data_Sheets/Motor_Driver_Datasheet.pdf)| 
+| Metal Motor | 2 | Pololu | [Link](/Data_Sheets/Metal_Motor_Specifications.pdf)|  
+| Motor Wheels | 2| Pololu | [Link](/Data_Sheets/Dimensions/Pololu_Wheel_Dimensions.pdf)|
+| Metal Motor Brackets | 2 | Pololu | [Link](/Data_Sheets/Dimensions/Metal_Motor_Mount_Dimensions.jpg) |
+| Front Wheels | 2 | Amazon | [Link](https://www.amazon.com/gp/product/B073W18BP3) |
+| Steel Weights | 30 | Amazon | [Link](https://www.amazon.com/gp/product/B06XDHXRT7)|
+| 1/8" MDF Board| 1 | Home Depot | N/A |
+| 2" by 1" Plank | 1 | Home Depot | N/A |
 
 ## Controllers
 ### Assembled Controller
