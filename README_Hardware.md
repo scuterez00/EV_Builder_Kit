@@ -60,6 +60,7 @@ This bill of materials covers the material needed to create one LDV car, and doe
 | Plastic Motor Brackets | 2 | Pololu | [Link](/Data_Sheets/Dimensions/Plastic_Motor_Mounts_Dimensions.pdf) |
 | Front Wheels | 2 | Amazon | [Link](https://www.amazon.com/gp/product/B073W18BP3) |
 | Steel Weights | 10 | Amazon | [Link](https://www.amazon.com/gp/product/B06XDHXRT7)|
+| LEDs | 2 | Amazon | N/A |
 | 1/8" MDF Board| 1 | Home Depot | N/A |
 | 2" by 1" Plank | 1 | Home Depot | N/A |
 
@@ -76,11 +77,12 @@ This bill of materials covers the material needed to create one HDV car, and doe
 | Battery | 1 | Adafruit |  [Link](/Data_Sheets/Battery_Datasheet.pdf)|
 | Voltage Regulator| 1 | Pololu |  [Link](/Data_Sheets/Pololu_Regulator_Sheets/Chip_Datasheet.pdf)| 
 | Motor Controller | 1 | Adafruit | [Link](/Data_Sheets/Motor_Driver_Datasheet.pdf)| 
-| Metal Motor | 2 | Pololu | [Link](/Data_Sheets/Metal_Motor_Specifications.pdf)|  
+| Metal Motor | 2 | Pololu | [Link](/Data_Sheets/Metal_Motor_Datasheet.pdf)|  
 | Motor Wheels | 2| Pololu | [Link](/Data_Sheets/Dimensions/Pololu_Wheel_Dimensions.pdf)|
 | Metal Motor Brackets | 2 | Pololu | [Link](/Data_Sheets/Dimensions/Metal_Motor_Mount_Dimensions.jpg) |
 | Front Wheels | 2 | Amazon | [Link](https://www.amazon.com/gp/product/B073W18BP3) |
 | Steel Weights | 30 | Amazon | [Link](https://www.amazon.com/gp/product/B06XDHXRT7)|
+| LEDs | 2 | Amazon | N/A |
 | 1/8" MDF Board| 1 | Home Depot | N/A |
 | 2" by 1" Plank | 1 | Home Depot | N/A |
 
