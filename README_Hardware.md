@@ -2,7 +2,7 @@
 This is a report which covers the fundamentals of the hardware, including both the circuitry and the casing/bodies made to house the products.
 
 ## Cars
-This section will deal with the circuitry and hardware for the vehicles used
+This section will deal with the circuitry and casing for the electric cars.
 
 ### Car Bodies
 **Car Front:**
@@ -87,8 +87,19 @@ This bill of materials covers the material needed to create one HDV car, and doe
 | 2" by 1" Plank | 1 | Home Depot | N/A |
 
 ## Controllers
+This section will deal with the circuitry and casing for the controllers.
+
 ### Assembled Controller
-  Pictures of actual Controller
+
+**Controller Top:**
+![Controller Top](/Images/Controller/Controller_Top.JPG)
+**Controller Side:**
+![Controller Side](/Images/Controller/Controller_Side.JPG)
+**Controller Bottom:**
+![Controller Bottom](/Images/Controller/Controller_Bottom.JPG)
+**Controller Held:**
+![Controller Held](/Images/Controller/Controller_Held.JPG)
+
 ### Controller Circuit Schematic
   Schematic+Explaination
 ### Circuit Body Schematic
