@@ -28,10 +28,10 @@ This section will deal with the circuitry and casing for the electric cars.
   Shown here is the top of the circuitry tower, which contains the following: the NRF24L01 transciever chip, the microcontroller (an Elegoo Nano), and the LiPo Charging chip. The transciever is responsible for communication between the car and the controllers, while the microcontroller is responsible for performing all the computations and translations necessary to control each component of the car. The LiPo Charging chip is attached to provide a regulated method of charging the LiPo battery, utilizing either a 3.5 mm DC jack, or a USB type C Cable. Also shown here are LEDs attached to provide the user feedback on control and charging.
 
 ### Car Circuit Schematic
-![image](https://user-images.githubusercontent.com/74795368/165640042-de89219c-cf17-487c-97ad-1129df1fb366.png)
-[Link to PDF](/Circuit_Schematics/Car_Circuit.pdf)
 ![image](https://user-images.githubusercontent.com/74795368/165640060-bbe30a24-28e5-4a18-b645-b129249c1591.png)
 [Link to PDF](/Circuit_Schematics/Car_Circuit_Abstraction.pdf)
+![image](https://user-images.githubusercontent.com/74795368/165640042-de89219c-cf17-487c-97ad-1129df1fb366.png)
+[Link to PDF](/Circuit_Schematics/Car_Circuit.pdf)
  
 Shown here is a circuit diagram and an associated abstraction. Essentially the circuit can be split up into two different components, the battery circuit and the operational circuit. The operational circuit operates on 5 volts and consists of: the microcontroller, voltage regulator, motor driver, motors, and transciever. This circuit is what drives radio communication and driving of the car. The battery circuit on the other hand consists of the LiPo Fuel Gauge and the LiPo Charging Chip, and serves to monitor and recharge the battery. The output of the battery circuit is fed to the voltage regulator to actually power the rest of the operational circuit. Thus by turning off the voltage regulator using a switch, we are able to maintain the ability to charge the battery while cutting power off from the car.
 
@@ -39,7 +39,7 @@ Shown here is a circuit diagram and an associated abstraction. Essentially the c
 ![image](https://user-images.githubusercontent.com/74795368/165643972-cb1862c7-8c90-45af-9fd8-f76641012f2d.png)
 [Link to PDF](/Hardware_Schematics/Car_Schematic.pdf)
 
-Shown here is the drawing used to create the body of the cars. This is the drawing for the LDV variant of the cars. The body is made up of two main components: the 1/8" thick MDF board and the 2" by 1" wood plank. The MDF board is drilled so that all the circuit components can be attached using screws, while the plank is super glued to the front of the MDF board, for mounting the wheels. Once all the circuitry has been attached and screwed in, steel weights are then added to the back of the vehicle, to improve the vehicle's handling by shifting the center of gravity towards the motored wheels.
+Shown here is the drawing used to create the body of the cars. This is the drawing for the LDV variant of the cars. The body is made up of two main components: the 1/8" thick MDF board and the 2" by 1" wood plank. The MDF board is drilled so that all the circuit components can be attached using screws, while the plank is super glued to the front of the MDF board, for mounting the wheels. Once all the circuitry has been attached and screwed in, steel weights are then added to the back of the vehicle, to improve the vehicle's handling by shifting the center of gravity towards the motored wheels. No CAD files were created as all components were made by hand.
 
 ### Bill of Materials
 #### Light Duty Vehicle(LDV) variant Car
@@ -60,6 +60,7 @@ This bill of materials covers the material needed to create one LDV car, and doe
 | Plastic Motor Brackets | 2 | Pololu | [Link](/Data_Sheets/Dimensions/Plastic_Motor_Mounts_Dimensions.pdf) |
 | Front Wheels | 2 | Amazon | [Link](https://www.amazon.com/gp/product/B073W18BP3) |
 | Steel Weights | 10 | Amazon | [Link](https://www.amazon.com/gp/product/B06XDHXRT7)|
+| Solderable Breadboard | 2 | Adafruit | [Link](https://www.adafruit.com/product/1609)|
 | LEDs | 2 | Amazon | N/A |
 | 1/8" MDF Board| 1 | Home Depot | N/A |
 | 2" by 1" Plank | 1 | Home Depot | N/A |
@@ -82,6 +83,7 @@ This bill of materials covers the material needed to create one HDV car, and doe
 | Metal Motor Brackets | 2 | Pololu | [Link](/Data_Sheets/Dimensions/Metal_Motor_Mount_Dimensions.jpg) |
 | Front Wheels | 2 | Amazon | [Link](https://www.amazon.com/gp/product/B073W18BP3) |
 | Steel Weights | 30 | Amazon | [Link](https://www.amazon.com/gp/product/B06XDHXRT7)|
+| Solderable Breadboard | 2 | Adafruit | [Link](https://www.adafruit.com/product/1609)|
 | LEDs | 2 | Amazon | N/A |
 | 1/8" MDF Board| 1 | Home Depot | N/A |
 | 2" by 1" Plank | 1 | Home Depot | N/A |
@@ -100,11 +102,33 @@ This section will deal with the circuitry and casing for the controllers.
 **Controller Held:**
 ![Controller Held](/Images/Controller/Controller_Held.JPG)
 
+  Shown here are 4 views of one of the fully assembled controller. The controller body was made using 1/8" thick Medium-Density Fiberboard(MDF). Holes were drilled into the MDF board for the purpose of screwing in the joysticks, LCD, and toggle switches. Additional holes were also made for the purpose of routing wire from the bottom of the controller to the top, which has the breadboard attached. On the breadboard itself is simply a microcontroller and an attached NRF24l01 transciever. Taped to the back is the battery pack, which can be switched on or off to provide power to the controller.
+  On the controller there are three toggle switches in the center, and LCD, and two joysticks. The joysticks are responsible for taking user input and converting that into motion on the cars. The left joystick is pushed forward/back to control the cars forward or reversing speed, while the right joystick is pushed horizontally to turn the car. The toggle switches are used to switch between cars, as each controller is capable of communicating with up to 3 cars. And the LCD is responsible for displaying the battery life and mileage remaining on each of the cars.
+  
 ### Controller Circuit Schematic
-  Schematic+Explaination
-### Circuit Body Schematic
-  Schematic+Explaination
+![image](https://user-images.githubusercontent.com/74795368/165649225-096b2f3b-132b-4085-8893-0d432939a31c.png)
+[Link to PDF](/Circuit_Schematics/Controller_Circuit_Abstraction.pdf)
+![image](https://user-images.githubusercontent.com/74795368/165649187-36e824a3-b0b5-40b9-81e3-0d6510a1b7f7.png)
+[Link to PDF](/Circuit_Schematics/Controller_Circuit.pdf)
+
+As shown in the circuit diagram and abstraction, the controller circuit is only one circuit, which uses the microcontroller as the central hub. The battery pack routes power to the microcontroller, which then takes inputs from the various switches and joysticks on the controller. Once the inputs have been recieved, the microcontroller translates them into packets to be sent via the transciever. However the transciever also recieves packets and sends these packets to the microcontroller, which then translates these packets into information, and displays this information onto the LCD.
+
+### Controller Body Schematic
+![image](https://user-images.githubusercontent.com/74795368/165649635-fd1e970c-26ed-44ff-a192-cf0d10c5edb6.png)
+[Link to PDF](/Hardware_Schematics/Controller_Schematic.pdf)
+
+This details the size of holes, and location of holes required to be drilled into a 1/8" thick MDF board for all the components to be properly screwed in. No CAD Files were created as all components were made by hand. 
+
 ### Bill of Materials
   Table with Vendor names and Links, and amounts. Link relevant datasheets here as well
-### Datasheets
-  List significant Datasheets
+| Item | Amount | Vendor | Datasheet Link |
+| --------------- | :---------------: | :---------------: |:---------------: |
+| Microcontroller | 1 | Amazon | [Link](/Data_Sheets/Nano_Pinouts.pdf)|
+| Transciever | 1 | Amazon | [Link](/Data_Sheets/nRF24L01_Datasheet.pdf)|
+| Breadboard | 1 | Adafruit | [Link](https://www.adafruit.com/product/4539)|
+| Battery Pack | 1 | Adafruit |  [Link](/Data_Sheets/Battery_Pack_Datasheet.pdf)|
+| Joystick | 2 | Amazon | [Link](https://www.amazon.com/ARCELI-Joystick-Controller-Dual-axis-Breakout/dp/B077Z8QN3S)| 
+| Toggle Switch | 3 | Amazon | [Link](https://www.amazon.com/Gikfun-MTS102-Position-Toggle-Arduino/dp/B01BWL7Z44)|  
+| LCD Display | 1 | Amazon | [Link](https://www.amazon.com/gp/product/B01GPUMP9C)|
+| AA Batteries | 4 | Adafruit |  N/A | 
+| 1/8" MDF Board| 1 | Home Depot | N/A |
