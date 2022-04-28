@@ -1,5 +1,6 @@
 # EV_Builder_Kit Engineering Addendum
 Erbyn Bonilla, Henry Chong, Stephanie Cuterez, Linglong Le, Michelle Imogu
+
 EC464 - Spring 2022
 
 ## Summary and Project Motivation
