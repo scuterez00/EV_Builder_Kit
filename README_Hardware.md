@@ -120,7 +120,9 @@ As shown in the circuit diagram and abstraction, the controller circuit is only 
 This details the size of holes, and location of holes required to be drilled into a 1/8" thick MDF board for all the components to be properly screwed in. No CAD Files were created as all components were made by hand. 
 
 ### Bill of Materials
-  Table with Vendor names and Links, and amounts. Link relevant datasheets here as well
+
+This bill of materials covers the material needed to create one controller, and does not include components such as nails, screws and wires.
+
 | Item | Amount | Vendor | Datasheet Link |
 | --------------- | :---------------: | :---------------: |:---------------: |
 | Microcontroller | 1 | Amazon | [Link](/Data_Sheets/Nano_Pinouts.pdf)|
