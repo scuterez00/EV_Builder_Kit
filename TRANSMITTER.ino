@@ -7,9 +7,11 @@
 
 RF24 radio(9, 8);
 LiquidCrystal_I2C lcd(0x27, 20, 4);
+// Different Addresses for vehicles, each controller has 3 vehicles attached to it.
 const byte vehicle_1[6] = "00011";
 const byte vehicle_2[6] = "00100";
 const byte vehicle_3[6] = "00110";
+/////////////////////////////////////////////////////////////////////////////
 byte vehicle[6] = "00000";
 int yPosition_1 = 0;
 int xPosition_2 = 0;
@@ -47,6 +49,9 @@ void loop() {
   Switch_1 = digitalRead(4);
   Switch_2 = digitalRead(7);
   Switch_3 = digitalRead(3);
+  
+//////////////////////////////////////////////////////////////////////////////////////////
+//Toggle Switches to decide which vehicle the user will manage
 
   switch (Switch_1) {
     case 1:
