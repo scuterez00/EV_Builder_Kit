@@ -5,7 +5,9 @@
 #include <RF24_config.h>
 #include <SPI.h>
 
+// Sets up the radio using pins 9 and 8
 RF24 radio(9, 8);
+// Sets up the LCD to display information
 LiquidCrystal_I2C lcd(0x27, 20, 4);
 // Different Addresses for vehicles, each controller has 3 vehicles attached to it.
 const byte vehicle_1[6] = "00011";
