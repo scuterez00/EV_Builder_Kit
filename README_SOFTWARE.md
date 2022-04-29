@@ -18,7 +18,7 @@ The function will first send a 3-bit message to the receiver to let it know to s
 The receiver.ino file contains all the code for the vehicle to read the inputs of the controller and adjust the motors. The libraries that must be installed for the code to work are: Adafruit's LC709203F library, and the nRF24L01 libraries. The LC709203F library is required for the I2C communication of battery data from the connected chip to the microcontroller, while the nRF24L01 libraries are necessary for the transceiver. No additional files are needed for the code to work successfully. The Arduino code can be uploaded directly to an Arduino Nano and should work properly. The code will always go through a while loop when the radio is available in that channel. If available, the code will obtain a 3-bit message sent from the controller and go through if statements to see which message was detected. There are 8 available 3-bit messages to send. 7 of those messages are to determine the action of the motors which includes moving forward, backwards, left, right, adjusting speeds, or to not move at all.
 
 ### (transmitter function)
-
+The transmitter function will activate once the receiver obtains the 3-bit message to switch from reading to writing. If this is shown, it will go into the if statement and convert the float battery percentage to a string so that it can be sent through the transmitter. Once it sends the message, the transmitter will then switch from writing to reading so that it can obtain more 3-bit messages.
 
 ## Drivers Required
 In the case that you are not using official Arduino Microcontrollers for this project, then it will be necessary to install certain drivers for the code to upload properly. In most cases this will be the CH340 drivers.
