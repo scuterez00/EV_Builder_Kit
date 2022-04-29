@@ -39,8 +39,6 @@ void setup() {
   Serial.print("Version: 0x"); Serial.println(lc.getICversion(), HEX);
   lc.setThermistorB(3950);
   lc.setPackSize(LC709203F_APA_500MAH);
-  lcd.setCursor(0, 1);
-  lcd.print(lc.cellPercent(), 1);
 
   //Set Output Mode for the Pins
   pinMode(Motor1P1, OUTPUT);
