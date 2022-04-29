@@ -10,11 +10,12 @@ char POWER[8] = "";
 
 //Defining the State of Charge Board
 Adafruit_LC709203F lc;
-//Defining LEDs that will light up to signify battery power
+//Defining Pins that control the motors
 #define Motor1P1 3
 #define Motor1P2 4
 #define Motor2P2 5
 #define Motor2P1 6
+//Defining the LED to signify Controller Communication
 #define On 8
 
 void setup() {
